@@ -21,29 +21,32 @@ const NavTag = styled.div`
     align-items:center;
     list-style:none;
 
+
+    @media screen and (max-width:800px) {
+      margin:auto;
+      width:100%;
+      height:80px;
+      .navLinks {display:none};
+    }
+    
+
     @media screen and (max-width:600px) {
       margin:auto;
       width:100%;
       height:50px;
       background:green;
+      .navLinks {display:none};
+    };
 
-      .navLinks {
-        display:none;
-      };
-
-      };
-
-      .hamburger:hover {
-        
+    .hamburger:hover {
         .navLinks {
           display: flex;
           justify-content:column wrap;
           align-content:flex-start;
         };
+      };
+    };
 
-      }
-    }
-    
 `;
 
 

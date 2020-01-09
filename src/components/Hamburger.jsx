@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const HamburgerTag = styled.div`
     width:50px;
     height:50px;
-    //margin:1px;
+    margin:10px;
     margin-left:auto;
     positon:relative;
     
@@ -17,13 +17,20 @@ const HamburgerTag = styled.div`
         top:225px;
         .hamburg {display:none};
     
-        @media screen and (max-width:600px) {
-            /* .navLinks {
-                display: flex;
-                justify-content:column wrap;
-                align-content:flex-start;
-              } */
+    @media screen and (max-width:800px) {
+        .hamburger {
+            width:800px;
+            height:100px;
         }
+        
+    };
+    @media screen and (max-width:600px) {
+            .navLinks {
+            display: flex;
+            justify-content:column wrap;
+            align-content:flex-start;
+            } 
+    }
 
 `;
 

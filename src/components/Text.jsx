@@ -47,6 +47,18 @@ const Text = styled.text`
         left:1px;
     };
 
+    @media screen and (max-width:800px) {
+        font-size: 3rem;
+        height:60px;
+        &::before {
+          width:470px;
+        };
+        &::after {
+          width:470px;
+          top:60px;
+        };
+    };
+
     @media screen and (max-width:600px) {
             font-size: 2rem;
             height:40px;

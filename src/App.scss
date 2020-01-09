@@ -11,7 +11,59 @@
   margin: auto;
   background: purple;
 
-}
+};
+
+@media screen and (max-width:2000px) {
+  .App {
+    width: 100%;
+    background: yellow;
+  };
+
+  .navBar {
+    width: 100%;
+    display: none;
+    background: black;
+  };
+};
+
+@media screen and (max-width:1600px) {
+  .App {
+    width: 100%;
+    background: yellow;
+  };
+
+  .navBar {
+    width: 100%;
+    display: none;
+    background: black;
+  };
+};
+
+@media screen and (max-width:1200px) {
+  .App {
+    width: 100%;
+    background: yellow;
+  };
+
+  .navBar {
+    width: 100%;
+    display: none;
+    background: black;
+  };
+};
+
+@media screen and (max-width:800px) {
+  .App {
+    width: 100%;
+    background: yellow;
+  };
+
+  .navBar {
+    width: 100%;
+    display: none;
+    background: black;
+  };
+};
 
 @media screen and (max-width:600px) {
   .App {
@@ -25,8 +77,6 @@
     background: black;
   };
 
-  .titleText {
-    font-size: 5px;
-  }
+
 
 }

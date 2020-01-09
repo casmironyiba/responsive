@@ -19,10 +19,13 @@ const theme = {
     justify-content:center;
     align-item:center;
 
+    @media screen and (max-width:800px) {
+      height:150px;
+    };
+
     @media screen and (max-width:600px) {
       height:100px;
-    }
-
+    };
  `;
 
  
