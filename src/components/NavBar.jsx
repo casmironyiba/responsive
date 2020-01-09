@@ -21,6 +21,27 @@ const NavTag = styled.div`
     align-items:center;
     list-style:none;
 
+    @media screen and (max-width:2000px) {
+      margin:auto;
+      width:100%;
+      height:120px;
+      .hamburger {
+        display:none;
+      }
+    };
+    
+    @media screen and (max-width:1600px) {
+      margin:auto;
+      width:100%;
+      height:80px;
+      .hamburger {display:none};
+    }
+    @media screen and (max-width:1200px) {
+      margin:auto;
+      width:100%;
+      height:80px;
+      .hamburger {display:none};
+    }
 
     @media screen and (max-width:800px) {
       margin:auto;
@@ -72,7 +93,7 @@ class NavBar extends React.Component {
         <Hamburger className = 'hamburger' />
          <Router>
           <Section NavSection>
-            <li> <Button to='/'>{this.state.NavLink1}</Button> </li>
+            {/* <li> <Button to='/'>{this.state.NavLink1}</Button> </li> */}
           </Section>
             
               <UnorderedList NavLinks className = 'navLinks' > 

@@ -15,6 +15,14 @@ const HeaderTag = styled.div`
     height:300px;
     background: ${theme.color.darkColor};
 
+    @media screen and (max-width:1600px) {
+      height:200px;
+    };
+
+    @media screen and (max-width:1200px) {
+      height:200px;
+    };
+
     @media screen and (max-width:800px) {
       height:200px;
     };

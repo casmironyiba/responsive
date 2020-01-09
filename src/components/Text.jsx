@@ -47,6 +47,40 @@ const Text = styled.text`
         left:1px;
     };
 
+    @media screen and (max-width:2000px) {
+      font-size: 4rem;
+      height:90px;
+      &::before {
+        width:640px;
+      };
+      &::after {
+        width:640px;
+        top:90px;
+    };
+    };
+
+    @media screen and (max-width:1600px) {
+      font-size: 4rem;
+      height:80px;
+      &::before {
+        width:640px;
+      };
+      &::after {
+        width:640px;
+        top:80px;
+    };
+
+    @media screen and (max-width:1200px) {
+      font-size: 3.2rem;
+      height:60px;
+      &::before {
+        width:503px;
+      };
+      &::after {
+        width:500px;
+        top:60px;
+    };
+
     @media screen and (max-width:800px) {
         font-size: 3rem;
         height:60px;

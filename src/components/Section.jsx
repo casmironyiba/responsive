@@ -10,15 +10,6 @@ const Section = styled.div`
     align-items:center;
     flex-flow: row wrap;
 
-    @media screen and (max-width:800px) {
-        display:none;
-      };
-      
-    @media screen and (max-width:600px) {
-        display:none;
-    };
-   
-  
 `;
 
 
