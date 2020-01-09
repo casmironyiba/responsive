@@ -1,6 +1,8 @@
 import React from 'react';
 import styled,{ThemeProvider as Theme} from 'styled-components';
 import Text from './Text';
+import Animation from './Animation';
+import Section from './Section';
 
 const theme = {
         redColor: 'red',
@@ -19,6 +21,11 @@ const theme = {
     justify-content:center;
     align-item:center;
 
+    
+
+
+
+//////////////////////// media Query starts/////////////////////
     @media screen and (max-width:800px) {
       height:150px;
     };
@@ -26,6 +33,7 @@ const theme = {
     @media screen and (max-width:600px) {
       height:100px;
     };
+//////////////////////// media Query ends/////////////////////
  `;
 
  
@@ -41,10 +49,15 @@ const theme = {
    render() {
      return (
        <Theme theme = {theme}>
+         
          <TitleTag className >
-         <Text title>
-           {this.state.TitleMessge}
-         </Text>
+           <Animation title>
+              <Section title>
+                <Text title>
+                  {this.state.TitleMessge}
+                </Text>
+              </Section>
+         </Animation>
          </TitleTag>
         </Theme>
      )

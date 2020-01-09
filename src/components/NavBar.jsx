@@ -2,13 +2,13 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, NavLink, Route} from 'react-router-dom';
 import styled,{ThemeProvider as Theme} from 'styled-components';
 import { UnorderedList } from './UnorderedList';
-import Button from './Button';
 import Section from './Section';
 import Hamburger from './Hamburger';
 
 const theme = {
         darkColor:'#333333',
-        blueColor:'blue'
+        blueColor:'blue',
+        tealColor:'teal',
 };
 
 

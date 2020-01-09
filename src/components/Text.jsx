@@ -20,13 +20,29 @@ const Text = styled.text`
     font-size: ${props => props.title ? '4rem' : ''};
     text-align : ${props => props.title ? 'center' : 'left'};
     background:${theme.color.tealColor};
-    height:80px;
+    height:100%;
     position:relative;
     top:20px;
     border-radius:50px 0px 50px 0px;
     //border: 5px dotted ${theme.color.blackColor};
     text-shadow: 5px 5px 10px brown;
     box-shadow: 10px 10px 10px black;
+
+    //////////////////////// Animations starts/////////////////////
+
+/*     animation: Title;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    position:relative;
+
+    @keyframes Title {
+        0% {top: -100px}
+        
+        100% {top:50px}    
+    };
+ */
+    //////////////////////// Animations ends/////////////////////
     &::before {
         content: '';
         width:640px;
@@ -103,6 +119,8 @@ const Text = styled.text`
               width:300px;
               top:40px
             };
+
+  
         };
 `;
 

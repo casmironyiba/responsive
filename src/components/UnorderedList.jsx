@@ -9,7 +9,7 @@ export const UnorderedList = styled.ul`
     align-items:center;
     flex-flow: row wrap;
     list-style:none;
-    background: red;
+    background: palevioletred;
     margin-left: auto;
 
     a {
