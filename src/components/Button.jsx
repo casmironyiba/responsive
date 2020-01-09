@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import styled,{ThemeProvider as Theme } from 'styled-components';
+import styled from 'styled-components';
 
 const theme = {
     primary: 'teal',
