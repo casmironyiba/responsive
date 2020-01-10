@@ -15,7 +15,7 @@ const theme = {
  const TitleTag = styled.title`
     background : ${theme.darkColor};
     width: 100%;
-    height: 150px;
+    height: 170px;
     text-align: center;
     display:flex;
     justify-content:center;
