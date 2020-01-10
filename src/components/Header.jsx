@@ -11,12 +11,13 @@ const theme = {
 }
 
 const HeaderTag = styled.div`
+    grid-area: h;
     width:100%;
-    height:300px;
+    height:250px;
     background: ${theme.color.darkColor};
 
     @media screen and (max-width:1600px) {
-      height:200px;
+      height:250px;
     };
 
     @media screen and (max-width:1200px) {

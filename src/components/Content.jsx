@@ -1,17 +1,22 @@
 import React from 'react';
 import styled,{ThemeProvider as Theme} from 'styled-components';
+import Container from './Container';
+import ContentCard from './ContentCard';
+
 
 
 const theme = {
-    color: {
         palevioletredColor : 'palevioletred',
+        greenColor: 'green',
+        whiteColor: 'white',
     }
-}
+
 
 const ContentTag = styled.div`
+    grid-area:c;
     width:100%;
     height:100%;
-    background :${this.theme.color.palevioletredColor};
+    background :${theme.whiteColor};
     display: grid;
     grid-template:repeat(20,150px) / repeat(3, 1fr);
 
@@ -20,7 +25,9 @@ const ContentTag = styled.div`
 const Content = () => (
     <div>
         <ContentTag>
-            <h3>this is cotent</h3>
+            <Container content>
+                
+            </Container>
         </ContentTag>
     </div>
 
