@@ -11,12 +11,11 @@ const theme = {
 
 
 const ContentCard = styled.div`
-    width:150px;
-    height:70px;
+    width:350px;
+    height:100px;
     background:${theme.lightblueColor};
     border:1px solid ${theme.redColor}; 
     box-shadow: 2px 2px 2px ${theme.blackColor}; 
-
 
 `;
 export default ContentCard;

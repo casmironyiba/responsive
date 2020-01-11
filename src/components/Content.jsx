@@ -3,6 +3,7 @@ import styled,{ThemeProvider as Theme} from 'styled-components';
 import Container from './Container';
 import ContentCard from './ContentCard';
 import Section from './Section';
+import BackgroundImage from './BackgroundImage';
 
 
 
@@ -24,8 +25,10 @@ const ContentTag = styled.div`
 const Content = () => (
         <ContentTag>
             <Container contentContainer>
-                <Section menu/>
-                <Section content/>
+                <Section content>
+                    <h1>welcome</h1>
+                </Section>
+            
             </Container>
         </ContentTag>
     
