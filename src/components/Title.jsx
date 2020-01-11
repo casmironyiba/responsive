@@ -50,7 +50,7 @@ const theme = {
      return (
        <Theme theme = {theme}>
          
-         <TitleTag className >
+         <TitleTag title >
            <Animation title>
               <Section title>
                 <Text title>

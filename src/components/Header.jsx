@@ -13,7 +13,7 @@ const theme = {
 const HeaderTag = styled.div`
     grid-area: h;
     width:100%;
-    height:250px;
+    height:100%;
     background: ${theme.color.darkColor};
 
     @media screen and (max-width:1600px) {
