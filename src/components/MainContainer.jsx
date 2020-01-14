@@ -1,4 +1,4 @@
-import styled,{ThemeProvider as Theme} from 'styled-components';
+import styled from 'styled-components';
 
 const theme = {
     color:{

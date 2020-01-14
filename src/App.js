@@ -1,15 +1,10 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/Header';
-import Content from './components/Content';
-import MainContainer from './components/MainContainer';
+import HomePage from './pages/Home-page/HomePage';
 
 const App = () => (
   <div className = 'App'>
-    <MainContainer>
-      <Header />
-      <Content />
-    </MainContainer>
+    <HomePage />
   </div>
 );
 

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 
-
 const Section = styled.div`
     background: ${props => props.title ? 'none'
         :props.content ? "none"  
