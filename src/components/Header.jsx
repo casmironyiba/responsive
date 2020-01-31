@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Title from './Title';
 import NavBar from './NavBar';
-import '../images/image1.jpg';
+
 
 
 const theme = {
@@ -16,7 +16,7 @@ const HeaderTag = styled.div`
     grid-area: h;
     width:100%;
     height:100%;
-    background: ${theme.whiteColor};
+    background: ${theme.darkColor};
     backgroundImage: url('image1.jpg');
 
     @media screen and (max-width:1600px) {
