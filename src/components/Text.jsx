@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const theme = {
-    color: {
         whiteColor:'white',
         redColor : 'red',
         blueColor : 'blue',
@@ -9,24 +8,30 @@ const theme = {
         tealColor: 'teal',
         palevioletredColor:'palevioletred',
         blackColor:'black'
-    }
 };
 
 
 const Text = styled.text`
-    color: ${props => props.title ? theme.color.whiteColor : theme.color.blackColor};
-    font-family: geogia;
-    text-transform: uppercase;
+    color: 
+      ${props => props.title ? theme.whiteColor 
+      :props.containerText ? theme.yellowColor
+      :theme.color.blackColor};
+    font-family:  ${props => props.title ? 'geogia' :''};
+    text-transform:  ${props => props.title ? 'uppercase' : ''};
     font-size: ${props => props.title ? '4rem' : ''};
     text-align : ${props => props.title ? 'center' : 'left'};
-    background:${theme.color.tealColor};
-    height:100%;
-    position:relative;
-    top:20px;
-    border-radius:50px 0px 50px 0px;
-    //border: 5px dotted ${theme.color.blackColor};
-    text-shadow: 5px 5px 10px brown;
-    box-shadow: 10px 10px 10px black;
+    background:${props => props.title ? theme.tealColor : ''};
+    height:  
+      :${props => props.textContainer ?'70px' 
+      :props.title ? '100%' 
+      :''};
+    position: ${props => props.title ? 'relative' : ''};
+    top:  ${props => props.title ? '20px' : ''};
+    border-radius:  ${props => props.title ? '50px 0px 50px 0px' : ''};
+    text-shadow:  ${props => props.title ? '5px 5px 10px brown' :''};
+    box-shadow:  ${props => props.title ? '10px 10px 10px black' :''};
+    opacity: ${props =>props.sectionContainer ? 1 : ""};
+    z-index: ${props =>props.sectionContainer ? 2 : ""};
 
     //////////////////////// Animations starts/////////////////////
 
@@ -44,23 +49,23 @@ const Text = styled.text`
  */
     //////////////////////// Animations ends/////////////////////
     &::before {
-        content: '';
-        width:640px;
-        height:5px;
-        background:yellow;
-        position:absolute;
-        top:-5px;
-        left:40px;
+        content: ${props => props.title ?' "" ' : ''};
+        width: ${props => props.title ? '640px' : ''};
+        height: ${props => props.title ? '5px' :''};
+        background: ${props => props.title ? 'yellow' : ''};
+        position: ${props => props.title ? 'absolute' : ''};
+        top: ${props => props.title ? '-5px' : ''};
+        left: ${props => props.title ? '40px' : ''};
     };
 
     &::after {
-        content: '';
-        width:640px;
-        height:5px;
-        background:yellow;
-        position:absolute;
-        top:75px;
-        left:1px;
+        content: ${props => props.title ?' "" ' : ''};
+        width: ${props => props.title ? '640px' : ''};
+        height: ${props => props.title ? '5px' :''};
+        background: ${props => props.title ? 'yellow' :''};
+        position: ${props => props.title ? 'absolute' :''};
+        top: ${props => props.title ? '75px' :''};
+        left: ${props => props.title ? '1px' :''};
     };
 
  

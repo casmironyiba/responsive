@@ -2,28 +2,35 @@ import styled from 'styled-components';
 
 
 const Section = styled.div`
-    background: ${props => props.title ? 'none'
-        :props.content ? "url('images/image2_0.jpg')"  
-        :props.NavSection ? "teal"
+    background: 
+        ${props => props.title ? 'none'
+        :props.sectionContainer ? "transparent"  
+        :props.navSection ? "teal"
         :props.menu ? 'green' 
         :"none" };
-        
-    background-position: ${props => props.content ? 'center' : ''};
-    background-size: ${props => props.content ? 'cover' : ''};
-    background-repeat                                                       : ${props => props.content ? 'no-repeat' : ''};
-
-
-    width: ${props => props.NavSection ? '30%' 
-        :props.title ? '100%' 
+    width:
+        ${props => props.navSection ? '30%' 
+        :props.textContainer ? '100%' 
         :props.content ? '100%'
         :props.menu ? "30%"
+        :props.sectionContainer ? '100%%'
+        :props.title ? '100%'
         :'100px'};
-
+    margin: ${props => props.sectionContainer ? "0px auto" : 'right'};
+    border: 
+        ${props => props.containerTitle ?'1px solid red' 
+        :props.sectionContainer ? '1px solid red'
+        :""};
     display: ${props => props.content ? 'grid' :''}; 
     grid-template: ${props => props.content ? 'repeat(20,150px) / repeat(3, 1fr)' :''};
-
-    height: ${props => props.Title ? "80px" : '100%'};
-
+    height: 
+        ${props => props.containerTitle ? "80px" 
+        :props.navSection ? '100%'
+        :props.sectionContainer ? '1450px'
+        :''};
+    position: ${props => props.sectionContainer ? 'relative' :""};
+    top: ${props => props.sectionContainer ? '50px' :""}
+    box-sizzing: boder-box;
 `;
 
 

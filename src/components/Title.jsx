@@ -3,7 +3,8 @@ import styled,{ThemeProvider as Theme} from 'styled-components';
 import Text from './Text';
 import Animation from './Animation';
 import Section from './Section';
-import Image from './Image';
+
+
 const theme = {
         redColor: 'red',
         darkColor : "#333333",
@@ -22,9 +23,6 @@ const theme = {
     opacity:1
 
     
-
-
-
 //////////////////////// media Query starts/////////////////////
     @media screen and (max-width:800px) {
       height:150px;
@@ -49,17 +47,17 @@ const theme = {
    render() {
      return (
        <Theme theme = {theme}>
-         
+         <Section title>
          <TitleTag title >
            <Animation title>
-              <Section title>
+              <Section textContainer>
                 <Text title>
-                 
                   {this.state.TitleMessge}
                 </Text>
               </Section>
          </Animation>
          </TitleTag>
+        </Section>
         </Theme>
      )
    }

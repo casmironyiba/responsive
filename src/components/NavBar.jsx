@@ -93,7 +93,7 @@ class NavBar extends React.Component {
         <NavTag>
         <Hamburger className = 'hamburger' />
          <Router>
-          <Section NavSection>
+          <Section navSection>
             {/* <li> <Button to='/'>{this.state.NavLink1}</Button> </li> */}
           </Section>
             
