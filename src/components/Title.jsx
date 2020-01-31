@@ -3,7 +3,7 @@ import styled,{ThemeProvider as Theme} from 'styled-components';
 import Text from './Text';
 import Animation from './Animation';
 import Section from './Section';
-
+import Image from './Image';
 const theme = {
         redColor: 'red',
         darkColor : "#333333",
@@ -13,13 +13,13 @@ const theme = {
 };
 
  const TitleTag = styled.title`
-    background : ${theme.darkColor};
     width: 100%;
     height: 170px;
     text-align: center;
     display:flex;
     justify-content:center;
     align-item:center;
+    opacity:1
 
     
 
@@ -54,6 +54,7 @@ const theme = {
            <Animation title>
               <Section title>
                 <Text title>
+                 
                   {this.state.TitleMessge}
                 </Text>
               </Section>

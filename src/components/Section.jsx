@@ -3,12 +3,11 @@ import styled from 'styled-components';
 
 const Section = styled.div`
     background: ${props => props.title ? 'none'
-        :props.content ? "none"  
+        :props.content ? "url('images/image2_0.jpg')"  
         :props.NavSection ? "teal"
         :props.menu ? 'green' 
         :"none" };
         
-    background-image: ${props => props.content ? "url('/home/casmir/dev/responsive/src/images/image1.jpeg')" : ''}
     background-position: ${props => props.content ? 'center' : ''};
     background-size: ${props => props.content ? 'cover' : ''};
     background-repeat                                                       : ${props => props.content ? 'no-repeat' : ''};

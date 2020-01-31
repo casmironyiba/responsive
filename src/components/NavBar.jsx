@@ -20,6 +20,7 @@ const NavTag = styled.div`
     justify-content:flex-start;
     align-items:center;
     list-style:none;
+    opacity:1
 
     @media screen and (max-width:2000px) {
       margin:auto;

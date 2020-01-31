@@ -5,16 +5,18 @@ import NavBar from './NavBar';
 
 
 const theme = {
-    color: {
         darkColor: '#333333',
+        whiteColor: 'white',
     }
-}
+
 
 const HeaderTag = styled.div`
     grid-area: h;
     width:100%;
     height:100%;
-    background: ${theme.color.darkColor};
+    background: ${theme.darkColor};
+    //background : url('images/image3.jpg');
+    //background-position: center;
 
     @media screen and (max-width:1600px) {
       height:250px;

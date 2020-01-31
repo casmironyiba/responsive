@@ -63,16 +63,7 @@ const Text = styled.text`
         left:1px;
     };
 
-    @media screen and (max-width:2000px) {
-      font-size: 4rem;
-      height:90px;
-      &::before {
-        width:640px;
-      };
-      &::after {
-        width:640px;
-        top:90px;
-    };
+ 
     };
 
     @media screen and (max-width:1600px) {
@@ -83,7 +74,7 @@ const Text = styled.text`
       };
       &::after {
         width:640px;
-        top:80px;
+        top:70px;
     };
 
     @media screen and (max-width:1200px) {
