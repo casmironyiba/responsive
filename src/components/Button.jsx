@@ -7,12 +7,12 @@ const theme = {
 }
 
 const Button = styled.button`
-    width:120px;
-    height: 50px;
+    width:80px;
+    height: 30px;
     background: ${theme.palevioletredColor}
     color: ${props => props.primary ? theme.primary : theme.secondary};
     position:relative;
-    border-radius:15px 0px 15px 0px
+    border-radius:10px;
 
 `;
 

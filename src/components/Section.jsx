@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 
 const Section = styled.div`
-    background: 
-        ${props => props.title ? 'none'
-        :props.sectionContainer ? "transparent"  
-        :props.navSection ? "teal"
-        :props.menu ? 'green' 
+    display:${props => props.navSection ?'flex': ''};
+    justify-content: ${props => props.navSection ? "flex-start" : ''};
+    align-items: ${props => props.navSection ? "center" : ''};
         :"none" };
     width:
-        ${props => props.navSection ? '30%' 
+        ${props => props.navSection ? '50%' 
         :props.textContainer ? '100%' 
         :props.content ? '100%'
         :props.menu ? "30%"
         :props.sectionContainer ? '100%%'
         :props.title ? '100%'
+        :props.search ?'400px'
+        :props.logo ? '30%'
         :'100px'};
     margin: ${props => props.sectionContainer ? "0px auto" : 'right'};
     border: 
@@ -27,7 +27,11 @@ const Section = styled.div`
         ${props => props.containerTitle ? "80px" 
         :props.navSection ? '100%'
         :props.sectionContainer ? '1450px'
+        :props.search ? '30px'
         :''};
+    background: 
+        ${props => props.search ? 'white' 
+        :props.navSection ? 'transparent' :''}
     position: ${props => props.sectionContainer ? 'relative' :""};
     top: ${props => props.sectionContainer ? '50px' :""}
     box-sizzing: boder-box;
