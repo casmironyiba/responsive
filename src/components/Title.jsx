@@ -34,17 +34,9 @@ const theme = {
 //////////////////////// media Query ends/////////////////////
  `;
 
- 
- class Title extends React.Component {
-     constructor(props) {
-       super(props)
+
      
-       this.state = {
-          TitleMessge : 'NaijafOreZ Website',
-       };
-     }
-     
-   render() {
+const Title = () => {
      return (
        <Theme theme = {theme}>
          <Section title>
@@ -52,7 +44,7 @@ const theme = {
            <Animation title>
               <Section textContainer>
                 <Text title>
-                  {this.state.TitleMessge}
+                  NaijafOreZ Website
                 </Text>
               </Section>
          </Animation>
@@ -61,6 +53,6 @@ const theme = {
         </Theme>
      )
    }
- }
+ 
  
  export default Title;

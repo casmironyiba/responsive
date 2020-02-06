@@ -12,12 +12,11 @@ const theme = {
 
     
 
-const HeaderTag = styled.div`
+const Container = styled.div`
     grid-area: h;
     width:100%;
     height:100%;
     background: ${theme.darkColor};
-    backgroundImage: url('image1.jpg');
 
     @media screen and (max-width:1600px) {
       height:250px;
@@ -43,10 +42,10 @@ const HeaderTag = styled.div`
 
 const Header = () => {
   return (
-    <HeaderTag className = 'header' >
+    <Container className = 'header' >
         <Title />
         <NavBar />
-    </HeaderTag>
+    </Container>
   )
 }
 
