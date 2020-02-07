@@ -16,7 +16,8 @@ const Section = styled.div`
     margin:auto;
     margin-top:20px
     font-size:2rem;
-`
+    color:${theme.tealColor};
+`;
 
 const Logo = () => (
     <Container>

@@ -1,9 +1,7 @@
 import React from 'react';
 import styled,{ThemeProvider as Theme} from 'styled-components';
-import Text from './Text';
 import Animation from './Animation';
-import Section from './Section';
-
+import TitleText from './TitleText';
 
 const theme = {
         redColor: 'red',
@@ -15,7 +13,7 @@ const theme = {
 
  const TitleTag = styled.title`
     width: 100%;
-    height: 170px;
+    height: 150px;
     text-align: center;
     display:flex;
     justify-content:center;
@@ -34,22 +32,27 @@ const theme = {
 //////////////////////// media Query ends/////////////////////
  `;
 
+ const Container = styled.div`
+    width:100%;
+ `;
+
+ const Section = styled.div`
+    width:100%;
+ `;
 
      
 const Title = () => {
      return (
        <Theme theme = {theme}>
-         <Section title>
-         <TitleTag title >
+         <Container>
+         <TitleTag>
            <Animation title>
-              <Section textContainer>
-                <Text title>
-                  NaijafOreZ Website
-                </Text>
+              <Section>
+                <TitleText/>
               </Section>
          </Animation>
          </TitleTag>
-        </Section>
+        </Container>
         </Theme>
      )
    }

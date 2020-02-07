@@ -19,7 +19,7 @@ const MainContainer = styled.div`
     position:relative;
     display : grid;
     margin: auto;
-    grid-template: 250px 1500px 250px / repeat(12, 1fr);
+    grid-template: 210px 1500px 250px / repeat(12, 1fr);
     grid-template-areas:
         'h h h h h h h h h h h h'
         'c c c c c c c c c c c c'

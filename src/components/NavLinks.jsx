@@ -10,7 +10,8 @@ const theme = {
     tealColor:'teal',
     whiteColor:'white',
     palevioletredColor: 'palevioletred',
-    yellowColor: 'yellow'
+    yellowColor: 'yellow',
+    purpleColor:'purple'
 };
 
 const UL = styled.ul`
@@ -23,28 +24,39 @@ const UL = styled.ul`
     list-style:none;
     background: transparent;
     margin-left: auto;
-    //background:red
-    
+    background:${theme.purpleColor};
+    border-radius:100px 0px 0px 0px;
     a {
         text-decoration: none;
-        color:black;
+        color:${theme.yellowColor};
     };
     
-`;
-
-const Container = styled.div`
+    `;
+    
+    const Container = styled.div`
     width: 55%;
     height:100%;
 
     @media screen and (max-width:)
 `;
 
+const LI = styled.li`
+    width:80px;
+    height:30px;
+    //background:brown
+
+&:hover {
+    background:black;
+    transition: 1s
+}
+
+
+`
 
 const NavLinks = () => {
     let Icon = {
-        size : 'xl',
-        color:'blue',//theme.tealColor,
-        transform : 'up-10 left--50 grow-0',
+        color:theme.tealColor,
+        
       }
         return (
     <Theme theme={theme}>
@@ -52,11 +64,12 @@ const NavLinks = () => {
             <Router>
             <UL> 
                 {/* <FontAwesomeIcon icon='search' transform = 'left-400 grow-0' /> */}
-                <li><NavLink to='/music'><FontAwesomeIcon icon = {'music'} style={Icon}/>Music</NavLink> </li> 
-                <li><NavLink to='/videos'><FontAwesomeIcon icon = {'video'} style={Icon}/>Videos</NavLink></li> 
-                <li><NavLink to='/movies'><FontAwesomeIcon icon = {'film'} style={Icon}/>Movies</NavLink></li> 
-                <li><NavLink to='/app'><FontAwesomeIcon icon = {'mobile'} style={Icon}/>App</NavLink></li> 
-                <li><NavLink to='/news'><FontAwesomeIcon icon = {'newspaper'} style={Icon}/>News</NavLink></li>
+        
+                <LI><NavLink to='/music'><FontAwesomeIcon icon = {'music'} style={Icon} fixedWidth /* transform='up-.2 left-.6 grow-0' *//>Music</NavLink> </LI> 
+                <LI><NavLink to='/videos'><FontAwesomeIcon icon = {'video'} style={Icon} fixedWidth />Videos</NavLink></LI> 
+                <LI><NavLink to='/movies'><FontAwesomeIcon icon = {'film'} style={Icon} fixedWidth/>Movies</NavLink></LI> 
+                <LI><NavLink to='/app'><FontAwesomeIcon icon = {'mobile'} style={Icon} fixedWidth/>App</NavLink></LI> 
+                <LI><NavLink to='/news'><FontAwesomeIcon icon = {'newspaper'} style={Icon} fixedWidth/>News</NavLink></LI>
             </UL>
 
             <Switch>

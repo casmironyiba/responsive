@@ -9,11 +9,13 @@ const theme = {
 
 const Container =styled.div`
     width:30%;
+    
   
     @media screen and (max-width:600px) {
         Input {display:none};
         
-    }
+    };
+
 `;
 const Input = styled.input `
     width:350px;
@@ -23,6 +25,13 @@ const Input = styled.input `
     border-radius:50px;
     text-align:center
     font-size: 1.2rem;
+
+    @media screen and (max-width:800px) {
+        width:250px;
+        height:30px;
+        //display:none;
+        
+    }
 `;
  
 
@@ -34,7 +43,7 @@ const Input = styled.input `
     return (
      <Container>
         <Input placeholder='Search'/>
-        <FontAwesomeIcon icon='search' style={styles} transform='left-70 grow-2' />
+        <FontAwesomeIcon icon='search' style={styles} transform='left-70 grow-2'  />
     </Container>   
     );
 }

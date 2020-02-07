@@ -1,6 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, NavLink, Route} from 'react-router-dom';
-import styled,{ThemeProvider as Theme} from 'styled-components';
+import styled from 'styled-components';
 import NavSearch from './NavSearch';
 import Logo from './Logo';
 import Hamburger from './Hamburger';
@@ -23,7 +22,7 @@ const Container = styled.div`
   }
 
     width : 100%;
-    height:100%;
+    height:60px;
     background : ${theme.whiteColor};
     display: flex;
     justify-content:flex-start;
@@ -34,13 +33,12 @@ const Container = styled.div`
     @media screen and (max-width:1600px) {
       margin:auto;
       width:100%;
-      height:80px;
+
       .hamburger {display:none};
     }
     @media screen and (max-width:1200px) {
       margin:auto;
       width:100%;
-      height:80px;
       .hamburger {display:none};
     }
 
@@ -84,30 +82,4 @@ const NavBar = () => {
 }
 
 export default NavBar;
-
-
-// class NavBar extends React.Component {
-//     constructor(props) {
-//       super(props)
-    
-//       this.state = {
-//           NavLink1:"Search",
-//           NavLink2:"Music",
-//           NavLink3:"Videos",
-//           NavLink4:"Movies",
-//           NavLink5:"Apps",
-//           NavLink6:"News",
-         
-//       }
-  
-//     }
-//   render() {
-
-//     return (
-//    <h1></h1>
-//     )
-//   }
-// }
-
-// export default NavBar;
 
