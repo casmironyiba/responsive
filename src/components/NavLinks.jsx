@@ -11,7 +11,8 @@ const theme = {
     whiteColor:'white',
     palevioletredColor: 'palevioletred',
     yellowColor: 'yellow',
-    purpleColor:'purple'
+    purpleColor:'purple',
+    orangeColor:'orange'
 };
 
 const UL = styled.ul`
@@ -55,7 +56,7 @@ const LI = styled.li`
 
 const NavLinks = () => {
     let Icon = {
-        color:theme.tealColor,
+        color:theme.orangeColor,
         
       }
         return (

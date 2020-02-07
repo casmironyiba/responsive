@@ -73,7 +73,7 @@ const Container = styled.div`
 const NavBar = () => {
   return (
     <Container>
-      <Hamburger />
+      {/* <Hamburger /> */}
       <Logo />
       <NavSearch />
       <NavLinks />
